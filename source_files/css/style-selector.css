@@ -1,0 +1,18 @@
+/* #Style Selector
+================================================== */
+
+#style-selector { background:#fff; width:212px; display:block; position:fixed; left:0; top:98px; z-index:6789251; border-radius:0 5px 5px 0; -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.2);  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); box-shadow: 0 0 5px rgba(0,0,0,0.2); font-size:13px; border:1px solid #dedede\9;}
+#style-selector select { font-size:12px; }
+#style-selector .title-ss { background:#3f454a; line-height:45px; height:45px; border-bottom:1px solid #dbdbdb; text-align:center; font-size:15px; color:#fff; }
+#style-selector .box-ss { line-height:36px; height:36px;  text-align:center; color:#aaa; }
+#style-selector .box-ss.pad1 { padding:14px 12px 0;}
+#style-selector .box-ss.pad2 { padding:16px 12px 0; height:75px;}
+#style-selector img { float:left; margin:0 8px 8px 0; width:25px; height:24px; border:2px solid #fff;}
+#style-selector img:hover, #style-selector img.selected-ss { border-color:#f6dc15; cursor:pointer;}
+#t-row-left-ss, #t-row-right-ss  { background:#3f454a url(../images/style-selector-img/settings-ico.png) no-repeat center center; border-radius:0 5px 5px 0; width:45px; height:45px; display:block; position:fixed; left:212px; top:98px; z-index:6789252; -webkit-box-shadow: 2px 0 3px rgba(0,0,0,0.1);  -moz-box-shadow: 2px 0 2px rgba(0,0,0,0.1); box-shadow: 2px 0 2px rgba(0,0,0,0.1); border-top:1px solid #dedede\9; }
+#t-row-right-ss { left:0; z-index:6789250; }
+#t-row-left-ss:hover, #t-row-right-ss:hover { cursor:pointer; -webkit-box-shadow: 2px 0 3px rgba(246,220,41,0.2);  -moz-box-shadow: 2px 0 2px rgba(246,220,41,0.2); box-shadow: 2px 0 2px rgba(246,220,41,0.27); }
+
+@media only screen and (max-width: 767px) { 
+#style-selector, #t-row-left-ss, #t-row-right-ss  { display:none; visibility:hidden }
+}
