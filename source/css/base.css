@@ -40,6 +40,16 @@
 		border-spacing: 0; }
 		:focus { outline:0; }
 
+		.overlay {
+   background:transparent;
+   position:relative;
+   width:719px;
+   height:302px; /* your iframe height */
+   top:302px;  /* your iframe height */
+   margin-top:-300px;  /* your iframe height */
+}
+/*width="719" height="302" frameborder="0" style="border:0"*/
+
 
 /* #Basic Styles
 ================================================== */
