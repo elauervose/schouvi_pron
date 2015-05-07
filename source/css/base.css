@@ -40,7 +40,7 @@
 		border-spacing: 0; }
 		:focus { outline:0; }
 
-		.overlay {
+	.overlay {
    background:transparent;
    position:relative;
    width:719px;
