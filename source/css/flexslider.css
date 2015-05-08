@@ -9,7 +9,7 @@
  * Contributing author: Tyler Smith (@mbmufffin)
  */
 
- 
+
 /* Browser Resets */
 .flex-container a:active,
 .flexslider a:active,
@@ -17,18 +17,18 @@
 .flexslider a:focus  {outline: none;}
 .slides,
 .flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
 
 /* FlexSlider Necessary Styles
-*********************************/ 
+*********************************/
 .flexslider {margin: 0; padding: 0;}
 .flexslider .slides > li {display: none; position:relative; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {width: 100%; display: block;}
 .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */
-.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
-html[xmlns] .slides {display: block; position:relative;} 
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block; position:relative;}
 * html .slides {height: 1%;}
 
 /* No JavaScript Fallback */
@@ -73,9 +73,30 @@ html[xmlns] .slides {display: block; position:relative;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
 /* Caption */
-.slide-caption {  padding: 30px; max-width:40%; margin: 0;	position: absolute;	display: block;	left: 90px; bottom: 40px;	background-color: #222;	background: rgba(0, 0, 0, 0.5);}
-.slide-caption h3 {	color: #fff; padding-bottom: 10px;	margin:0; font-weight:400; }
-.slide-caption p {	margin:0;	line-height: 20px;	color: #c9c9c9;}
+.slide-caption {
+  padding: 30px;
+  max-width:40%;
+  margin: 0;
+  position: absolute;
+  display: block;
+  left: 90px;
+  bottom: 40px;
+  background-color: #222;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slide-caption h3 {
+  color: #fff;
+  padding-bottom: 10px;
+  margin:0;
+  font-weight:400;
+}
+
+.slide-caption p {
+  margin:0;
+  line-height: 20px;
+  color: #c9c9c9;
+}
 
 
 @media screen and (max-width: 860px) {
