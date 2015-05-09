@@ -212,6 +212,7 @@ span.row-mn {  background:url(../images/row-m1.png) no-repeat right center; widt
 *+html hr.vertical-space5 { margin:50px 0; }
 
 
+
 .mex-title { border-bottom: 4px solid rgba(0, 0, 0, 0.08); display:inline-block; padding-bottom:20px; margin-bottom:20px; }
 h2.mex-title { font-weight:400;}
 
@@ -220,10 +221,10 @@ h2.mex-title { font-weight:400;}
 .highlight2 { padding:2px 5px; background:#f4f4f4; color:#666; vertical-align:baseline; }
 .highlight3 { padding:14px 7px; background:#fff; vertical-align:baseline; display:block; border-radius:3px; margin:7px 3px; }
 
-h4.subtitle { border-bottom: 1px solid #e5e5e5; letter-spacing:0em; font-weight:bold; text-transform:uppercase; margin:35px 0 21px 0; line-height:2; font-size:16px; padding-bottom:5px; clear:both;}
+h4.subtitle { border-bottom: 1px solid #e5e5e5; letter-spacing:0em; font-weight:bold; text-transform:uppercase; margin:10px 0 10px 0; line-height:2; font-size:16px; padding-bottom:5px; clear:both;}
 h4.subtitle.boldbrdr { border-bottom-width:4px;}
 h4.subtitle img { float:left; margin-right:5px; vertical-align:baseline }
-h4.subtitle.r1dd { margin-top:20px;}
+h4.subtitle.r1dd { margin-top:10px;}
 .title { background:#fff url(../images/title-left1.png) repeat-x 0 6px; overflow:hidden; margin-bottom:21px; clear:both; }
 .title h4, .title h3 { background:#fff; display:inline; margin-left:18px; padding:0 3px; font-weight:500; text-transform:capitalize; font-size:18px; }
 
@@ -1079,12 +1080,12 @@ input.btn404 { float:left; margin:1px; padding:8px 12px 9px; }
 .slide-caption2 {
   padding: 30px;
   /*max-width:40%;*/
-  margin-top: 180px;
-  position: absolute;
-  display: block;
+  margin-top: 80px;
+  position: relative;
+  display: inline-block;
   left: 40%;
-  bottom: 100px;
-  max-height: 100px;
+  /*bottom: 100px;*/
+  /*max-height: 100px;*/
   background-color: #222;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -1100,6 +1101,7 @@ input.btn404 { float:left; margin:1px; padding:8px 12px 9px; }
   margin:0;
   line-height: 20px;
   color: #c9c9c9;
+  font-size: 1em;
 }
 
 @-webkit-keyframes fade {
@@ -1131,4 +1133,36 @@ input.btn404 { float:left; margin:1px; padding:8px 12px 9px; }
     -webkit-animation-delay: -20s;
     animation-delay: -20s;
     border-style: none;
+}
+
+
+.spacer {
+	background:#fff url(../images/title-left1.png) repeat-x 0 6px;
+	overflow:hidden;
+	margin-bottom:21px;
+	clear:both;
+}
+.title2 h4, .title2 h3 {
+	background:#fff;
+	display:inline;
+	margin-left:18px;
+	padding:0 3px;
+	font-weight:500;
+	text-transform:capitalize;
+	font-size:18px;
+}
+
+.snapwidget {
+	max-height: 340px;
+	min-height: 340px;
+}
+
+.snapwidget2 {
+	max-height: 250px;
+	min-height: 250px;
+}
+
+.snapwidget3 {
+	max-height: 100%;
+	min-height: 1670px;
 }

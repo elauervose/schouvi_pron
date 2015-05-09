@@ -56,7 +56,7 @@
 
 	body {
 		background: #f4f7f8 url(../images/bdbg1.png);
-		font: 14px/22px Helvetica, Arial, sans-serif;
+		font: 1em Helvetica, Arial, sans-serif;
 		color: #65707b;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
@@ -73,8 +73,8 @@
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h7 a { font-weight: inherit; }
 	h1 { font-size: 49px; line-height: 51px; margin-bottom: 20px; letter-spacing: -0.06em; }
 	h2 { font-size: 35px; line-height: 40px; margin-bottom: 20px; letter-spacing: -0.04em; }
-	h3 { font-size: 28px; line-height: 34px; margin-bottom: 14px; }
-	h4 { font-size: 21px; line-height: 30px; margin-bottom: 12px; }
+	h3 { font-size: 28px; line-height: 1.75em; margin-bottom: 14px; }
+	h4 { font-size: 21px; line-height: 30px; margin-bottom: 12px; font-weight: 500; }
 	h5 { font-size: 17px; line-height: 24px; margin-bottom: 10px; }
 	h6 { font-size: 14px; line-height: 21px; }
 	.subheader { color: #849098; }
@@ -85,14 +85,23 @@
 	h5.helvetic5 { font-family:Helvetica, Arial, sans-serif; font-size: 18px; line-height: 24px; margin-bottom:14px; }
 	h1 strong { font-weight:900; letter-spacing: -0.05em; }
 	h3 strong, h4 strong, h5 strong, h6 strong { font-weight:500; }
-	h3 strong { letter-spacing: -0.02em; }
+	h3 strong {
+		letter-spacing: -0.02em;
+	}
   p .light { font-size: 28px; font-weight: 200; line-height: 34px; margin-bottom: 20px; margin-top: 20px; }
 	p { color:#666e74; margin: 0; font-family: Helvetica, Arial; letter-spacing: 0.25px; }
 	p img { margin: 0; }
 	p.lead { font-size: 21px; line-height: 27px; color: #818a92;  }
 	p.magic { font-size: 19px; line-height: 25px; margin: 0; }
 	.container div p, .container article p, .container figure p { margin-bottom:20px; }
-	.container2 div p, .container2 article p, .container2 figure p { margin-bottom:8px; }
+
+	.container2 div p, .container2 article p, .container2 figure p {
+		margin-bottom:8px;
+	}
+
+	.article-responsive article p {
+		font-size: .5em;
+	}
 
 	em { font-style: italic; }
 	strong { font-weight: bold; color: #4c555b;}
@@ -157,17 +166,25 @@
 	ul.check li, li.check { background:url(../images/li-check.png) no-repeat left 4px; }
 	ul.plus li, li.plus { background:url(../images/li-plus.png) no-repeat left 4px; }
 	ul.minus li, li.minus { background:url(../images/li-minus.png) no-repeat left 3px; }
-	ul.star li, li.star { background:url(../images/li-star.png) no-repeat left 4px; }
+	ul.star li, li.star {
+		background:url(../images/li-star.png) no-repeat left 4px;
+	}
 
 	ul.arrow li, li.arrow { background:url(../images/li-arrow.png) no-repeat left 4px; }
 	ul.arrow2 li, li.arrow2 { background:url(../images/li-arrow2.png) no-repeat left 4px; }
 	ul.square li, li.square { background:url(../images/li-square.png) no-repeat left 4px; }
 	ul.circle li, li.circle { background:url(../images/li-circle.png) no-repeat left 5px; }
 	ul.cross li, li.cross { background:url(../images/li-cross.png) no-repeat left 3px; }
-	ul.check li, li.check, ul.plus li, li.plus, ul.minus li, li.minus, ul.star li, li.star,
+	ul.check li, li.check, ul.plus li, li.plus, ul.minus li, li.minus,
 	 ul.arrow li, li.arrow, ul.arrow2 li, li.arrow2, ul.square li, li.square,
-	  ul.circle li, li.circle, ul.cross li, li.cross { padding:0 0 1px 16px;  }
+	  ul.circle li, li.circle, ul.cross li, li.cross {
+	  	padding:0 0 1px 16px;
+	  }
 
+	  ul.star li, li.star{
+	  	padding-left: 20px;
+	  	padding-top: 2px;
+	  }
 
 /* #Images
 ================================================== */

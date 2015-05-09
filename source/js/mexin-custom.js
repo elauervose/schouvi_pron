@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------------------- */
 /*	doubleTapToGo
-/* ---------------------------------------------------------------------- */ 
+/* ---------------------------------------------------------------------- */
 
 
 jQuery(document).ready(function($){
@@ -44,8 +44,8 @@ $("#spanMessage").html('Please Wait...');
 		 alert(response);
 		 $("#spanMessage").html('<div class="alert alert-error"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>Error! </strong> Somthing Wrong</div>');
 	   }
-	   
-		 
+
+
 }});
 
 
@@ -59,23 +59,26 @@ $("#spanMessage").html('Please Wait...');
 /* ---------------------------------------------------------------------- */
 /*	Accordion
 /* ---------------------------------------------------------------------- */
-	
+
 	(function() {
 
 		var $container = $('.acc-container'),
 			$trigger   = $('.acc-trigger');
 
 		$container.hide();
-		$trigger.first().addClass('active').next().show();
+		$trigger.removeClass('active').next();
 
 		var fullWidth = $container.outerWidth(true);
 		$trigger.css('width', fullWidth);
 		$container.css('width', fullWidth);
-		
+
 		$trigger.on('click', function(e) {
 			if( $(this).next().is(':hidden') ) {
 				$trigger.removeClass('active').next().slideUp(300);
 				$(this).toggleClass('active').next().slideDown(300);
+			}
+			else{
+				$trigger.removeClass('active').next().slideUp(300);
 			}
 			e.preventDefault();
 		});
@@ -94,66 +97,66 @@ $("#spanMessage").html('Please Wait...');
 /*	Scroll to top
 /* ---------------------------------------------------------------------- */
 
-  jQuery(document).ready(function(){ 
- 
+  jQuery(document).ready(function(){
+
         jQuery(window).scroll(function(){
             if (jQuery(this).scrollTop() > 100) {
                 jQuery('.scrollup').fadeIn();
             } else {
                 jQuery('.scrollup').fadeOut();
             }
-        }); 
- 
+        });
+
         jQuery('.scrollup').click(function(){
             jQuery("html, body").animate({ scrollTop: 0 }, 700);
             return false;
         });
- 
+
     });
-  
-  
- 
+
+
+
 
 
 /* ---------------------------------------------------------------------- */
 	/* Header search form
 /* ---------------------------------------------------------------------- */
 jQuery(document).ready(function(){
-	
+
 	jQuery('.search-text-box').click(function(){
-		
+
 		jQuery(this).animate({
-		width:'140px',	
+		width:'140px',
 		},240,function(){
 			jQuery('.search-text-box').delay(100).queue(function(next){
 				jQuery('.search-text-box').css('color','#444');
 				next();
 			});
 		});
-		
+
 	});
-	
+
 	jQuery(document).click(function(ev){
-		
+
 		var myID = ev.target.id;
-		
+
 		if(myID != 'search-box'){
 			jQuery('.search-text-box').animate({
 			width:'1px',
-			
+
 			},200,function(){
-				
-				
+
+
 				jQuery('.search-text-box').css('color','transparent');
-				
-			
-				
+
+
+
 			});
 		}
 	});
-	
+
 });
-		
+
 
 /*********************/
 /*
@@ -166,11 +169,11 @@ jQuery(document).ready(function() {
 	if(jQuery('#our-clients').length){
 		jQuery('#our-clients').jcarousel();
 	}
-	
+
 	if(jQuery('#latest-projects').length){
 		jQuery('#latest-projects').jcarousel();
 	}
-});	
+});
 
 /*********************/
 /*
@@ -194,7 +197,7 @@ jQuery(document).ready(function(){
 		});
 	}
 
-});	
+});
 
 
 /*********************/
@@ -213,19 +216,19 @@ function initProgress(el){
 }
 
 
-			
+
 function progress(percent, $element) {
 	var progressBarWidth = 0;
-	
+
 	(function myLoop (i,max) {
 		progressBarWidth = i * $element.width() / 100;
-		setTimeout(function () {   
+		setTimeout(function () {
 		$element.find('div').find('small').html(i+'%');
 		$element.find('div').width(progressBarWidth);
-		if (++i<=max) myLoop(i,max);     
+		if (++i<=max) myLoop(i,max);
 		}, 10)
-	})(0,percent);  
-}	
+	})(0,percent);
+}
 
 
 /*********************/
@@ -250,7 +253,7 @@ jQuery(window).scroll(function(){
 		if(jQuery("#sticker").length)
 		{
 			jQuery("#sticker").css("position","relative");
-		}		
+		}
 	}
 });
 
@@ -263,7 +266,7 @@ jQuery(window).scroll(function(){
 /*********************/
 
 jQuery(document).ready(function() {
-      
+
 	  if(jQuery('.flexslider').length){
 		  jQuery('.flexslider').flexslider({
 			animation: "slide",
@@ -283,17 +286,17 @@ jQuery(document).ready(function() {
 
 
 jQuery(document).ready(function($){
-    
+
 	    /* ------------------------------------------------------------------------ */
 		/* Add PrettyPhoto */
 		/* ------------------------------------------------------------------------ */
-		
-		var lightboxArgs = {			
+
+		var lightboxArgs = {
 						animation_speed: 'fast',
 						overlay_gallery: true,
 			autoplay_slideshow: false,
 						slideshow: 5000, /* light_rounded / dark_rounded / light_square / dark_square / facebook */
-									theme: 'pp_default', 
+									theme: 'pp_default',
 									opacity: 0.8,
 						show_title: false,
 			social_tools: "",			deeplinking: false,
@@ -309,7 +312,7 @@ jQuery(document).ready(function($){
 		if(jQuery("a[rel^='prettyPhoto']").length){
 			jQuery("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'pp_default',slideshow:3000, autoplay_slideshow: false});
 		}
-		
+
 });
 
 
@@ -341,21 +344,21 @@ jQuery(window).load(function() {
 
 function tz_format_twitter(twitters) {
   var statusHTML = [];
-     
+
     var status = twitters.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
       return '<a href="'+url+'">'+url+'</a>';
     }).replace(/\B#([_a-z0-9]+)/ig, function(reply) {
       return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
     });
     statusHTML.push('<span>'+status+'</span>');
-  
+
   return statusHTML.join('');
 }
 
 jQuery(document).ready(function(){
- 
+
  jQuery.ajax({url:"twitter/twitter.php",success:function(result){
-	
+
 	jQuery("#twitter").html(tz_format_twitter(result));
 }});
 });
@@ -370,28 +373,28 @@ jQuery(document).ready(function(){
 jQuery(document).ready(function(){
 	// Cache the Window object
 	$window = jQuery(window);
-                
+
    $('section[data-type="background"]').each(function(){
      var $bgobj = jQuery(this); // assigning the object
-                    
+
       jQuery(window).scroll(function() {
-                    
+
 		// Scroll the background at var speed
-		// the yPos is a negative value because we're scrolling it UP!								
-		var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-		
+		// the yPos is a negative value because we're scrolling it UP!
+		var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+
 		// Put together our final background position
 		var coords = '50% '+ yPos + 'px';
 
 		// Move the background
 		$bgobj.css({ backgroundPosition: coords });
-		
+
 }); // window scroll Ends
 
- });	
+ });
 
-}); 
-/* 
+});
+/*
  * Create HTML5 elements for IE's sake
  */
 

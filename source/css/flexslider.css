@@ -106,5 +106,6 @@ html[xmlns] .slides {display: block; position:relative;}
   .flex-control-nav { bottom:16px; right:26px;}
   .flex-control-paging li a { width:10px; height:10px;}
   .slide-caption { display:none;}
+  .slide-caption2 { display:none;}
   .flex-control-nav li { margin:0 4px;}
 }
