@@ -73,6 +73,7 @@ img.drod { padding:4px; background:#f2f6f8; border-radius: 7px;}
 @media only screen and (max-width: 767px) {
 .blox.dark, .blox.gray { height:auto;}
 .homedark #nav a { color:#595959;}
+
 }
 @media only screen and (max-width: 959px) {
 .parallax-sec { background-repeat:repeat; background-size:960px auto;   height:400px;}
@@ -80,3 +81,8 @@ img.drod { padding:4px; background:#f2f6f8; border-radius: 7px;}
 .slogan h1 { font-size:41px; line-height:53px;}
 .aboutdark .slogan { position:relative; right:auto; margin:0 auto; padding:3%;}
 }
+
+@media only screen and (max-width: 767px) {
+    .slide-caption2 .fadein {display: none;}
+  }
+

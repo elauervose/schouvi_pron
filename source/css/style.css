@@ -225,7 +225,12 @@ h4.subtitle { border-bottom: 1px solid #e5e5e5; letter-spacing:0em; font-weight:
 h4.subtitle.boldbrdr { border-bottom-width:4px;}
 h4.subtitle img { float:left; margin-right:5px; vertical-align:baseline }
 h4.subtitle.r1dd { margin-top:10px;}
-.title { background:#fff url(../images/title-left1.png) repeat-x 0 6px; overflow:hidden; margin-bottom:21px; clear:both; }
+.title {
+	background:#fff url(../images/title-left1.png) repeat-x 0 6px;
+	overflow:hidden;
+	margin-bottom:40px;
+	clear:both;
+}
 .title h4, .title h3 { background:#fff; display:inline; margin-left:18px; padding:0 3px; font-weight:500; text-transform:capitalize; font-size:18px; }
 
 ul.our-clients { display:block; margin-bottom:20px;  box-shadow: 0px 2px 4px -3px rgba(0,0,0,0.1);  -webkit-box-shadow: 0px 2px 4px -2px rgba(0,0,0,0.1);}
@@ -575,17 +580,54 @@ a.show-all:active { background:#ffe483; border-color:#f7d96c; color:#b29839; }
 
 /* ICON BOX */
 
-.icon-box { vertical-align:baseline; margin-bottom:30px;}
-.icon-box img, .icon-box5 img, .icon-box i { float:left; display:block; vertical-align:text-top; margin:-1px 20px 95px 0;}
+.icon-box {
+	vertical-align:baseline;
+	margin-bottom:30px;
+}
+.icon-box img, .icon-box5 img, .icon-box i {
+	float:left;
+	display:block;
+	vertical-align:text-top;
+	margin:5px 10px 25px 0;
+}
 .icon-box5 img { margin:0 12px 0 0; }
-.icon-box5 i, .icon-box i { font-size:32px; color:#484b4d; float:left; margin-right:10px; cursor:default;}
-.icon-box i { margin-right:20px;}
+.icon-box5 i, .icon-box i {
+	font-size:32px;
+	color:#484b4d;
+	float:left;
+	margin-right:10px;
+	cursor:default;
+}
+.icon-box-contact i {
+	font-size: 25px;
+	color:#484b4d;
+	float:center;
+	margin-right:-10px;
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	cursor:default;
+}
+
+.icon-box i {
+	margin-right:20px;
+}
 .icon-box h5 { margin-bottom:10px; line-height:1; }
 .container .icon-box p { margin-bottom:12px; }
 .container .icon-box5 p { margin-top:4px; margin-right:20px; margin-bottom:10px;}
 .icon-box2 { vertical-align:baseline; text-align:center; border-radius:5px; padding:10px 0; 	-webkit-transition:background .3s ease-in-out;	-moz-transition:background .3s ease-in-out;	-ms-transition:background .3s ease-in-out;	-o-transition:background .3s ease-in-out;	transition:background .3s ease-in-out;}
 .icon-box2:hover { background-color:#fafafa; cursor:default;}
-.icon-box3 i, .icon-box4 i { font-size:48px; color:#666e74;  margin-bottom:10px; display:inline-block; -webkit-transition:all .3s ease-in-out;	-moz-transition:all .3s ease-in-out;	-ms-transition:all .3s ease-in-out;	-o-transition:all .3s ease-in-out;	transition:all .3s ease-in-out;}
+.icon-box3 i, .icon-box4 i {
+	font-size:105px;
+	color:#666e74;
+	/*margin-left: 105px;*/
+	display:inline-block;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-ms-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
 .icon-box3:hover i { color:#0093d0; cursor:default; }
 .icon-box3 h5, .icon-box4 h5 { margin-bottom:4px; color:#666e74; font-size:16px; letter-spacing: 0.25px; }
 .icon-box3 h5 strong, .icon-box4 h5 strong { font-weight:bold; }
@@ -1066,6 +1108,7 @@ input.btn404 { float:left; margin:1px; padding:8px 12px 9px; }
 
 /* ------ Stuff Erica Added to the Theme --------------- */
 
+
 .fadein article {
     position:absolute;
     top:0;
@@ -1165,4 +1208,14 @@ input.btn404 { float:left; margin:1px; padding:8px 12px 9px; }
 .snapwidget3 {
 	max-height: 100%;
 	min-height: 1670px;
+}
+
+.a {
+	display: inline-block;
+}
+
+.contact-min {
+	text-transform: none;
+	font-size: .8em;
+	margin-left: 0px;
 }
