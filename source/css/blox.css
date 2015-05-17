@@ -82,7 +82,4 @@ img.drod { padding:4px; background:#f2f6f8; border-radius: 7px;}
 .aboutdark .slogan { position:relative; right:auto; margin:0 auto; padding:3%;}
 }
 
-@media only screen and (max-width: 767px) {
-    .slide-caption2 .fadein {display: none;}
-  }
 

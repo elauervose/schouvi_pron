@@ -1,0 +1,12 @@
+@media only screen and (max-width: 767px) {
+  .slide-caption2  {
+    display: none;
+  }
+}
+
+#title {
+  font-size: 28px; line-height: 1.75em; margin-bottom: 14px;
+}
+#title .title-big {
+  font-size: 3em;
+}
