@@ -16,3 +16,7 @@ Color:
 (corrective color & multi color) - shouvimuahcorrective
 (single panel & partial color) - shouvimuahpartialcolor
 (highlights) - schouvimuahhighlights
+
+
+Error Note:
+Uncaught Security Error: Failed to read the 'contentDocument' property from 'HTMLIFrameElement': Blocked a frame with origin "http://localhost:4567" from accessing a frame with origin "http://widget.websta.me". Protocols, domains, and ports must match.(anonymous function) @ client.js:49

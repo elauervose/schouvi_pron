@@ -58,7 +58,7 @@ img.drod { padding:4px; background:#f2f6f8; border-radius: 7px;}
 .parallax-sec article { position: relative;  text-align: center;  top: 150px; height:120px;  width: 100%;  }
 .parallax-sec .blox, .parallax-sec .blox.dark { background:none;}
 
-.homedark, .aboutdark { width:100%; background:#141319 url(../images/red-hair.jpg) no-repeat top; height:400px; border-bottom: 4px solid #f1f1f1; position:relative; margin-bottom: 70px;}
+.homedark, .aboutdark { width:100%; background:#141319 url(../images/hair-header.jpg) no-repeat top; height:400px; border-bottom: 4px solid #f1f1f1; position:relative; margin-bottom: 70px;}
 .aboutdark {background:#eee url(../images/about-ext-img1.jpg) center top fixed; height:645px; border:none;}
 .homedark #nav a { color:#fff;}
 .homedark #nav ul a { color:#595959;}
