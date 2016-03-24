@@ -43,7 +43,7 @@
 	.overlay {
    background:transparent;
    position:relative;
-   width:719px;
+   width:100%;
    height:302px; /* your iframe height */
    top:302px;  /* your iframe height */
    margin-top:-300px;  /* your iframe height */
