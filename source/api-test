@@ -1,0 +1,65 @@
+
+
+function <%= params[:callback] %> () {
+  ";lkajsd f ;laskdjf ;lkjas dfl f"
+}
+
+
+<script src="chucksserver.com?callback=?">
+
+
+$.get("chucksserver.com", jsonp: true)
+
+
+// Ajax Request
+// =================
+
+var xhr = new XMLHttpRequest();
+
+xhr.open('GET', 'data/test.json', true);
+
+xhr.send();
+
+xhr.onload = function() {
+  if (xhr.status === 200) {
+    // code to process results from server
+    $.getJSON(url[, data] [, showEvents])
+  }
+}
+
+
+// JSONP Stuff
+// =================
+//<img class="image-feed" href="http:chucksserver.com/images/api-img.jpg">
+
+<script>
+  function showEvents(data) {
+    // code to process results from server
+    // and display it in the page here
+
+    $('selector').on('load', function(img){
+      img.preventDefault();
+      var queryString = "src="" + event.target.id """;
+      $.get("chucksserver.com", queryString, function(data){
+        $('#basic-cuts-api').html(data);
+      } );
+    });
+
+  };
+
+</script>
+
+<script src="chucksserver.com?callback=?"></script>
+
+
+// JSON Response
+// =================
+
+showEvents({
+  "events": [
+    {
+      "image": "img/something.jpg"
+    }
+  ]
+});
+
