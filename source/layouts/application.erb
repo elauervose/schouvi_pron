@@ -7,7 +7,9 @@
   ================================================== -->
   <meta charset="utf-8">
   <title>Schouvi Stylist</title>
-  <meta name="description" content="Hair cut, color, makeup">
+  <meta name="description" content="Hair cut, color, makeup, hair salon, mermaid hair, best hair stylist, hairstylist, hair salons, brown hair color, hair dye, best hair color, red hair, red hair color, blonde hair, hair color ideas, blue hair, purple hair, ombre, long hair, short hair, hair color, hair styles, hairstyles, hair style, hair cut, black hair, blonde hair
+
+">
   <meta name="author" content="Schouvi">
 
   <!-- Mobile Specific Metas
@@ -93,6 +95,34 @@
 
 <!-- End Document
   ================================================== -->
+
+  <!-- New Relic PageActions
+  ================================================== -->
+
+  <script>
+      document.getElementById('arrow-left').addEventListener('click',function (e) {
+          newrelic.addPageAction('clickedarrow-left');
+      })
+      document.getElementById('arrow-right').addEventListener('click',function (e) {
+          newrelic.addPageAction('clickedarrow-right');
+      })
+      document.getElementById('cuttingCrew').addEventListener('click',function (e) {
+          newrelic.addPageAction('clickedcuttingCrew');
+      })
+      document.getElementById('map').addEventListener('click',function (e) {
+          newrelic.addPageAction('clickedmap');
+      })
+      document.getElementById('instagram').addEventListener('click',function (e) {
+          newrelic.addPageAction('clickedinstagram');
+      })
+      document.getElementById('snapwidget').addEventListener('click',function (e) {
+          newrelic.addPageAction('clickedsnapwidget');
+      })
+      document.getElementById('scroll-top').addEventListener('click',function (e) {
+          newrelic.addPageAction('clickedscroll-top');
+      })
+  </script>
+
   <!-- JS
   ================================================== -->
   <script type="text/javascript" src="js/jquery.min.js" ></script>
